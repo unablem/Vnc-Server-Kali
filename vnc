@@ -1,0 +1,31 @@
+
+
+install: apt install tightvncserver xtightvncviewer
+
+edit xstartup file located on $HOME/.vnc/xstartup
+
+#!/bin/sh
+defhttps://github.com/unablem/Vnc-Server-Kali
+export XKLXMODMAPDISABLE=1
+unset SESSIONMANAGER
+unset DBUSSESSIONBUSADDRESS
+gnome-panel &
+gnome-terminal &
+gnome-settings-daemon &
+metacity &
+nautilus &
+gnome-terminal &
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+run vncserver with this command:
+
+vncserver -localhost no -wmDecoration 1366x768                        sometimes -localhost no is not necessery
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+

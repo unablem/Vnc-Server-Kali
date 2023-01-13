@@ -1,0 +1,11 @@
+#!/bin/sh
+defhttps://github.com/unablem/Vnc-Server-Kali
+export XKLXMODMAPDISABLE=1
+unset SESSIONMANAGER
+unset DBUSSESSIONBUSADDRESS
+gnome-panel &
+gnome-terminal &
+gnome-settings-daemon &
+metacity &
+nautilus &
+gnome-terminal &
